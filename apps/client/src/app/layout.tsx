@@ -1,3 +1,4 @@
+import { LegendStateInitializer } from '@/components/providers/legend-state'
 import '@acme/components/react/globals.css'
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
@@ -45,6 +46,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
+			<LegendStateInitializer />
 			<body className={bodySans.className}>{children}</body>
 		</html>
 	)

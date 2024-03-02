@@ -10,8 +10,7 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
-    "lint": "turbo lint",
-    "prepare": "husky"
+    "lint": "turbo lint"
   },
   "packageManager": "bun@1.0.25",
   "engines": {
@@ -28,8 +27,8 @@
     "lint-staged": "^15.2.2"
   },
   "lint-staged": {
-		"*.{js,ts,tsx,json,md,mdx}": [
-			"biome check --apply --no-errors-on-unmatched"
-		]
-	}
+    "*.{js,ts,tsx,json,md,mdx}": [
+      "biome check --apply --no-errors-on-unmatched"
+    ]
+  }
 }
